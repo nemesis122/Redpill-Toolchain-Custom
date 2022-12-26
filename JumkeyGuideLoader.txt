@@ -1,0 +1,35 @@
+Jumkey
+
+
+
+Unzip the attached file "redpill-tool-chain-master.zip" and modify "ds918p_user_config.json" for your system.
+
+Copy "redpill-tool-chain-master" folder to your NAS and connect to nas using "Putty".
+
+
+sudo su -
+( Go to the "redpill-tool-chain-master" folder )
+cd /volume1/temp
+
+
+ 
+
+./redpill_tool_chain.sh add https://raw.githubusercontent.com/jumkey/redpill-load/develop/redpill-misc/rpext-index.json
+
+./redpill_tool_chain.sh build ds918p-7.0.1-42218
+./redpill_tool_chain.sh auto ds918p-7.0.1-42218
+
+./redpill_tool_chain.sh build ds3622xsp-7.0.1-42218
+./redpill_tool_chain.sh auto ds3622xsp-7.0.1-42218
+ 
+
+You can find the "boot loader file" in the "image" folder.
+
+ 
+
+* I am posting at the request of a member.
+
+
+
+
+
